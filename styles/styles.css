@@ -586,7 +586,8 @@ hr {
 
 img, svg {
   vertical-align: top;
-  height: auto; }
+  height: auto;
+  max-width: 100%; }
 
 figure {
   padding: 0;
