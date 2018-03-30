@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Branding on Chris Bennett</title>
+    <link>http://example.org/tags/branding/</link>
+    <description>Recent content in Branding on Chris Bennett</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/branding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Harbor Media</title>
+      <link>http://example.org/portfolio/2016-3-4-harbor-media/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/portfolio/2016-3-4-harbor-media/</guid>
+      <description>I teamed up with Mike Cosper to work on branding for a new non-profit media company he was starting, Harbor Media. Mike loves vintage audio gear and classic broadcasting branding, but the first thing his new organization was going to do was produce podcasts. The first challenge was how to combine the aesthetic of classic American broadcasting branding with the more recent medium of podcasting.
+Inspiration Our initial inspiration came from the vintage logos of companies like RCA, NBC, and the National Radio Service Men&amp;rsquo;s Association:</description>
+    </item>
+    
+    <item>
+      <title>King’s Cross Church</title>
+      <link>http://example.org/portfolio/2016-11-2-kings-cross/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/portfolio/2016-11-2-kings-cross/</guid>
+      <description>I love working with non-profits. They often have limited resources, but make up for it with passion and a clear vision. These kinds of constraints often produce the best results, as they force the design to be focused and effective.
+King’s Cross Church is a church plant in San Francisco, CA. Being in a city known for decades for being on the forefront of technological innovation, they wanted something clean, simple, and straightforward.</description>
+    </item>
+    
+  </channel>
+</rss>

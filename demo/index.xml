@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demos on Chris Bennett</title>
+    <link>http://example.org/demo/</link>
+    <description>Recent content in Demos on Chris Bennett</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/demo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tabbed &amp; Toggleable Content with CSS Grid</title>
+      <link>http://example.org/demo/demo/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/demo/demo/</guid>
+      <description>Example: Test 1 Toggle Heading Toggle 1 items Toggle 1 items Toggle 1 items  Test 2 Toggle Heading Toggle 2 items Toggle 2 items Toggle 2 items  Test 3 Toggle Heading Toggle 3 items Toggle 3 items Toggle 3 items  Test 4 Toggle Heading Toggle 4 items Toggle 4 items Toggle 4 items    Toggleable content, such as an accordion, is straightforward enough. We have some content that is hidden and when something else is clicked or tapped the hidden content is shown.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/demo/grid-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/demo/grid-example/</guid>
+      <description>asdf </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/demo/grid-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/demo/grid-layout/</guid>
+      <description>Title of the page  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>
