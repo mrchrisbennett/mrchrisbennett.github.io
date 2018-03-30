@@ -541,9 +541,11 @@ hr {
 .container {
   margin: 0 auto;
   position: relative;
-  max-width: 30em; }
+  max-width: 30em;
+  padding: 0.65em; }
   @supports (grid-area: auto) {
     .container {
+      padding: 0;
       max-width: none; } }
 
 @supports (grid-area: auto) {
