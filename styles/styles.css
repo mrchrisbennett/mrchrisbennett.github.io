@@ -643,10 +643,11 @@ table th {
 .p-article__body header {
   /*@include clearfix;*/ }
 
-@supports (grid-area: auto) {
-  header {
-    grid-column: sidebar / span 3 !important;
-    grid-row: 1; } }
+@media (min-width: 60em) {
+  @supports (grid-area: auto) {
+    header {
+      grid-column: sidebar / span 3 !important;
+      grid-row: 1; } } }
 
 @supports (grid-area: auto) {
   .main-content {
