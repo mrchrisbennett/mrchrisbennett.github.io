@@ -887,14 +887,13 @@ table th {
 
 a {
   color: #222;
-  transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1);
   outline: 3px solid transparent; }
   a:hover {
     color: blue; }
   a:focus {
     outline: 3px solid blue; }
 
-a[href*="//"]:not([href*="localhost"]):after {
+a[href*="//"]:not([href*="chrisbennett.io"]):after {
   transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1);
   content: '⇗';
   display: inline-block;
@@ -905,7 +904,7 @@ a[href*="//"]:not([href*="localhost"]):after {
   transform: translateY(-0.05em);
   text-decoration: none; }
 
-a[href*="//"]:not([href*="localhost"]):hover:after {
+a[href*="//"]:not([href*="chrisbennett.io"]):hover:after {
   color: blue; }
 
 .p-title {
