@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Css on Chris Bennett</title>
-    <link>http://example.org/categories/css/</link>
+    <link>http://www.chrisbennett.io/categories/css/</link>
     <description>Recent content in Css on Chris Bennett</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.chrisbennett.io/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CSS Grid for Article Layout</title>
-      <link>http://example.org/posts/css-grid-article-layout/</link>
+      <link>http://www.chrisbennett.io/posts/css-grid-article-layout/</link>
       <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/css-grid-article-layout/</guid>
+      <guid>http://www.chrisbennett.io/posts/css-grid-article-layout/</guid>
       <description>CSS Grid makes big-picture layout a breeze. Need a flexible-yet-robust grid for your design? Grid has you covered. But what about smaller to mid-sized layouts, such as the content of an article? Well, CSS Grid makes some things easier, such as full-width content that breaks out of the regular flow of the content. However, there are some minor caveats that, with some planning, are easily dealt with.
 Basic Article Layout Laying out a basic article is straightforward enough.</description>
     </item>
     
     <item>
       <title>Tabbed &amp; Toggleable Content with CSS Grid</title>
-      <link>http://example.org/demo/demo/</link>
+      <link>http://www.chrisbennett.io/demo/demo/</link>
       <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/demo/demo/</guid>
+      <guid>http://www.chrisbennett.io/demo/demo/</guid>
       <description>Example: Test 1 Toggle Heading Toggle 1 items Toggle 1 items Toggle 1 items  Test 2 Toggle Heading Toggle 2 items Toggle 2 items Toggle 2 items  Test 3 Toggle Heading Toggle 3 items Toggle 3 items Toggle 3 items  Test 4 Toggle Heading Toggle 4 items Toggle 4 items Toggle 4 items    Toggleable content, such as an accordion, is straightforward enough. We have some content that is hidden and when something else is clicked or tapped the hidden content is shown.</description>
     </item>
     

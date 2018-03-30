@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Front End Design on Chris Bennett</title>
-    <link>http://example.org/tags/front-end-design/</link>
+    <link>http://www.chrisbennett.io/tags/front-end-design/</link>
     <description>Recent content in Front End Design on Chris Bennett</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/front-end-design/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.chrisbennett.io/tags/front-end-design/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MSD</title>
-      <link>http://example.org/portfolio/2016-11-4-msd/</link>
+      <link>http://www.chrisbennett.io/portfolio/2016-11-4-msd/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/portfolio/2016-11-4-msd/</guid>
+      <guid>http://www.chrisbennett.io/portfolio/2016-11-4-msd/</guid>
       <description>The Louisville/Jefferson County Metropolitan Sewer District (MSD) had an old site. Really old – Clinton is president, we are prepping for Y2K, and Napster is about to drop – old. Confession: I actually liked their old site. What it lacked in visual interest it made up for in obviousness. However, they needed a refresh to match a recent rebrand. Additionally, the site didn&amp;rsquo;t do a great job directing people where they needed to go when they needed help.</description>
     </item>
     
     <item>
       <title>LOJIC</title>
-      <link>http://example.org/portfolio/2016-11-4-lojic/</link>
+      <link>http://www.chrisbennett.io/portfolio/2016-11-4-lojic/</link>
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/portfolio/2016-11-4-lojic/</guid>
+      <guid>http://www.chrisbennett.io/portfolio/2016-11-4-lojic/</guid>
       <description>The Louisville/Jefferson County Information Consortium (LOJIC) is a multi-agency partnership that builds and maintains a Geographic Information System to serve Louisville, KY and the surrounding county.
 The original MSD design, circa 2003.   -- Goals The primary goal was to make their site responsive.
 What Worked One of the biggest priorities for the design was to streamline how users got help. The &amp;ldquo;We Can Help&amp;rdquo; section addressed this. Present on every page, users are able to get the most important information they need with ease.</description>
