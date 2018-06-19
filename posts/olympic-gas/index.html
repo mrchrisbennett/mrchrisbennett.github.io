@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Tabbed &amp; Toggleable Content with CSS Grid</title>
-  <meta property="og:title" content="Tabbed &amp; Toggleable Content with CSS Grid" />
-  <meta name="twitter:title" content="Tabbed &amp; Toggleable Content with CSS Grid" />
+  <title>Olympic Gas</title>
+  <meta property="og:title" content="Olympic Gas" />
+  <meta name="twitter:title" content="Olympic Gas" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Chris Bennett" />
-  <meta property="og:url" content="http://www.chrisbennett.io/demo/demo/" />
+  <meta property="og:url" content="http://www.chrisbennett.io/posts/olympic-gas/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -66,12 +66,19 @@
   <section id="js-article" class="p-article__body">
     <header>
     <div>
-      <h1 class="post-title">Tabbed &amp; Toggleable Content with CSS Grid</h1>
+      <h1 class="post-title">Olympic Gas</h1>
       
 
       
 
       
+        <p class="c-article__meta">
+          
+          <time class="c-article__date" datetime="2018-06-19T00:00:00Z">
+            June 19, 2018
+          </time>
+        </p>
+        
     
       
 
@@ -82,101 +89,15 @@
   </header>
   
     <div class="main-content">
-      
+      <figure>
+    <img src="/img/gas.jpg" alt="gas station prices">
+</figure>
 
-<h2 id="example">Example:</h2>
+<p>This is a gas pump down the street from our home. The prices, according to national averages, are average. The layout – not so much.</p>
 
-<div class="toggle-grid">
-    <h2 class="toggle">Test 1 Toggle Heading</h2>
-    <ul class="toggle-content">
-        <li>Toggle 1 items</li>
-        <li>Toggle 1 items</li>
-        <li>Toggle 1 items</li>
-    </ul>
-    <h2 class="toggle">Test 2 Toggle Heading</h2>
-    <ul class="toggle-content">
-        <li>Toggle 2 items</li>
-        <li>Toggle 2 items</li>
-        <li>Toggle 2 items</li>
-    </ul>
-    <h2 class="toggle">Test 3 Toggle Heading</h2>
-    <ul class="toggle-content">
-        <li>Toggle 3 items</li>
-        <li>Toggle 3 items</li>
-        <li>Toggle 3 items</li>
-    </ul>
-    <h2 class="toggle">Test 4 Toggle Heading</h2>
-    <ul class="toggle-content">
-        <li>Toggle 4 items</li>
-        <li>Toggle 4 items</li>
-        <li>Toggle 4 items</li>
-    </ul>
-</div>
+<p>What reason could there possibly be to put the most common choice in the center without any additional visual cues that it is what the customer is probably looking for? The only reasonable explanation is whoever designed this hopes customers won’t notice until it’s too late, choose a different grade, and then not be bothered to cancel the transaction and start over.</p>
 
-<hr>
-
-<p>Toggleable content, such as an accordion, is straightforward enough. We have some content that is hidden and when something else is clicked or tapped the hidden content is shown.</p>
-
-<p>We could set it up like the following and write a simple script that when the <code>h2</code> is clicked, the <code>ul</code> is shown.</p>
-
-<pre><code>&lt;h2 class=&quot;toggle&quot;&gt;Test 1 Toggle Heading&lt;/h2&gt;
-&lt;ul class=&quot;toggle-content&quot;&gt;
-	&lt;li&gt;Toggle 1 items&lt;/li&gt;
-	&lt;li&gt;Toggle 1 items&lt;/li&gt;
-	&lt;li&gt;Toggle 1 items&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-
-<p>This is our ideal markup structure. If our CSS or JS doesn&rsquo;t load for some reason, no problem. The content is structured in a logical way. But what if we want to display the headings in tabs, and have the toggled content to display below them, or to the side? We can position the content absolutely, but that is too brittle and cumbersome. Or, we can restructure our markup like this:</p>
-
-<pre><code>&lt;div class=&quot;toggle-wrapper&quot;&gt;
-	&lt;h2 class=&quot;toggle&quot;&gt;Test 1 Toggle Heading&lt;/h2&gt;
-&lt;/div&gt;
-&lt;div class=&quot;toggle-content-wrapper&quot;&gt;
-	&lt;ul class=&quot;toggle-content&quot;&gt;
-		&lt;li&gt;Toggle 1 items&lt;/li&gt;
-		&lt;li&gt;Toggle 1 items&lt;/li&gt;
-		&lt;li&gt;Toggle 1 items&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p>The problem with this is we have now separated the headings from their related lists. If our CSS or JS doesn&rsquo;t load, we have a problem. But not with CSS Grid. If we use the previous example with the more semantic and logical markup, we only need to wrap all the elements with one wrapper, and add a couple lines of CSS to it.</p>
-
-<p>The HTML</p>
-
-<pre><code>&lt;div class=&quot;toggle-grid&quot;&gt;
-	&lt;h2 class=&quot;toggle&quot;&gt;Test 1 Toggle Heading&lt;/h2&gt;
-	&lt;ul class=&quot;toggle-content&quot;&gt;
-		&lt;li&gt;Toggle 1 items&lt;/li&gt;
-		&lt;li&gt;Toggle 1 items&lt;/li&gt;
-		&lt;li&gt;Toggle 1 items&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p>The CSS</p>
-
-<pre><code>.toggle-grid {
-	display: grid;
-	grid-template-columns: repeat(4,1fr);
-}
-.toggle-content {
-	grid-column: 1 / -1;
-}
-</code></pre>
-
-<p>And that’s it. Without creating a mess with our markup, we can easily make responsive toggleable content into vertical or horizontal tabs with just a couple extra lines of CSS.</p>
-
-<script>
-  function classToggle() {
-      this.classList.toggle('is-toggled');
-  }
-  var classname = document.getElementsByClassName("toggle");
-  for (var i = 0; i < classname.length; i++) {
-      classname[i].addEventListener('click', classToggle, false);
-  }
-</script>
+<p>It’s essentially a real life <a href="https://en.wikipedia.org/wiki/Dark_pattern">dark pattern</a>. Gasoline is not an Olympic sport. The winner should not be flanked by silver and bronze.</p>
 
     </div>
   </section>
