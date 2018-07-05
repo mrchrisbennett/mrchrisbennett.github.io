@@ -475,8 +475,7 @@ body {
     grid-column: 1/-1; } }
 
 html {
-  font-size: 0.9em;
-  -webkit-font-smoothing: antialiased; }
+  font-size: 0.9em; }
   @media (min-width: 30em) {
     html {
       font-size: calc(1em + .4vw); } }
@@ -530,7 +529,7 @@ p {
 
 ul, ol {
   margin-bottom: 1em;
-  padding-left: 1em; }
+  padding: 0; }
 
 strong {
   font-weight: 700; }
@@ -539,11 +538,15 @@ article li {
   margin-left: 2rem;
   margin-bottom: 0.7em; }
 
+ul li {
+  margin: 0; }
+
 li + li {
-  margin-top: 2.1em; }
+  margin-top: 1.05em; }
 
 ol {
-  list-style: none; }
+  list-style: none;
+  padding-left: 1em; }
   ol li {
     counter-increment: item; }
     ol li strong {
@@ -698,6 +701,8 @@ figure {
       figure img:nth-last-of-type(2):first-child + img {
         width: 50%;
         padding: 2%; }
+  figure.pull-right img {
+    width: 100%; }
   figure.pull-right figcaption {
     text-align: left; }
   figure.pull-left figcaption {
