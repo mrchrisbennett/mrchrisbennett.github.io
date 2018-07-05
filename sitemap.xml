@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.chrisbennett.io/louisville-jefferson-county-information-consortium/</loc>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.chrisbennett.io/posts/olympic-gas/</loc>
     <lastmod>2018-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/portfolio/2016-11-4-msd/</loc>
+    <loc>http://www.chrisbennett.io/msd/</loc>
     <lastmod>2018-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/portfolio/2016-3-4-harbor-media/</loc>
+    <loc>http://www.chrisbennett.io/harbor-media/</loc>
     <lastmod>2018-01-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,17 +48,12 @@
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/portfolio/2016-11-4-lojic/</loc>
-    <lastmod>2017-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.chrisbennett.io/portfolio/2016-11-2-kings-cross/</loc>
+    <loc>http://www.chrisbennett.io/kings-cross-church/</loc>
     <lastmod>2016-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/portfolio/2016-11-1-additional-work/</loc>
+    <loc>http://www.chrisbennett.io/other-work/</loc>
     <lastmod>2015-01-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -66,12 +66,16 @@
   </url>
   
   <url>
+    <loc>http://www.chrisbennett.io/demo/lojic/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.chrisbennett.io/grid/</loc>
   </url>
   
   <url>
     <loc>http://www.chrisbennett.io/tags/branding/</loc>
-    <lastmod>2018-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -89,7 +93,7 @@
   
   <url>
     <loc>http://www.chrisbennett.io/</loc>
-    <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,13 +123,13 @@
   
   <url>
     <loc>http://www.chrisbennett.io/tags/front-end-design/</loc>
-    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.chrisbennett.io/portfolio/</loc>
-    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -137,13 +141,13 @@
   
   <url>
     <loc>http://www.chrisbennett.io/tags/</loc>
-    <lastmod>2018-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.chrisbennett.io/categories/web-design/</loc>
-    <lastmod>2018-01-30T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

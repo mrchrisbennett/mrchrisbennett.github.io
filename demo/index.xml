@@ -38,5 +38,14 @@
       <description>Title of the page  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://www.chrisbennett.io/demo/lojic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.chrisbennett.io/demo/lojic/</guid>
+      <description> LOJIC wireframe home      Maps▼ Survey control Lojic online Zoning Metro council districts Neighborhoods Metro Snow map Lidar Grid Metro Area ZIP MSD mowing IOAP CSO Floodplain Story maps Etc.   Data▼ Maps Catalog Open Data Custom Requests   About▼ Mission Partners Licensees   News &amp; Events Contact     Digital Infrastructure | Geography is how we do business  Maps Learn more  Data Learn more  Maps Learn more   Maps  LOJIC Online Map Toggle Map  Metro Snow Map Link to Map  Metro Council Districts Link to Map  LOJIC Online Map Link to Map  Metro Snow Map Link to Map  Metro Council Districts Link to Map          </description>
+    </item>
+    
   </channel>
 </rss>
