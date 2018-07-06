@@ -39,6 +39,10 @@
   100% {
     transform: rotate(0deg); } }
 
+@media (min-width: 60em) {
+  .row-1 {
+    grid-row: 1; } }
+
 .mb {
   margin-bottom: 4.2em; }
 
@@ -704,9 +708,9 @@ figure {
   figure.pull-right img {
     width: 100%; }
   figure.pull-right figcaption {
-    text-align: left; }
+    text-align: center; }
   figure.pull-left figcaption {
-    text-align: right; }
+    text-align: center; }
   figure.pull-left img:nth-last-of-type(2):first-child {
     width: 100%;
     padding: 2%;
