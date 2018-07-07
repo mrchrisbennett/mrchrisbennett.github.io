@@ -450,9 +450,11 @@ html {
   padding: .5em;
   font-weight: 300;
   min-height: 100vh;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  border-top: 5px solid blue; }
   @media (min-width: 60em) {
     html {
+      border-top: 0;
       box-shadow: inset .5em .5em 0 #efefef, inset -.5em -.5em 0 #efefef; } }
 
 *, *:before, *:after {
@@ -1125,6 +1127,7 @@ table th {
     /*background-color: #efefef;*/
     /*border-radius: .3em;*/
     margin: 0;
+    margin-left: 1em;
     margin-right: 0.5em;
     font-size: .75em;
     font-style: italic; }
