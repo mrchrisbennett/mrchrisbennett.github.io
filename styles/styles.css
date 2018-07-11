@@ -1015,7 +1015,7 @@ table th {
   line-height: 1.2; }
 
 .article__meta {
-  color: #212121;
+  color: #666;
   font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
   margin-top: 0.7rem;
@@ -1082,6 +1082,7 @@ table th {
   margin-bottom: 0;
   padding: 0; }
   .tags__item {
+    color: #666;
     display: inline-block;
     margin: 0;
     margin-right: 0.5em;
