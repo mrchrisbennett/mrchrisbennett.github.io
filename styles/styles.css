@@ -524,14 +524,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em; }
 
 h1, .h1, .post-title {
-  font-size: 2.2em; }
+  font-size: 2.2rem; }
 
 h2, .h2, .p-title {
-  font-size: 1.2em; }
+  font-size: 1.2rem; }
 
 .main-content p, .main-content ol, .main-content ul {
   max-width: 30em;
-  font-size: 1.3em; }
+  font-size: 1.3rem; }
 
 .main-content p, .main-content ul, .main-content ol, .main-content dt, .main-content li {
   font-family: Athelas, Georgia, "Times New Roman", Times, serif; }
@@ -690,7 +690,7 @@ figure {
 
 figcaption {
   color: #666;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   outline: 0;
   margin-top: 1.05rem;
   width: 100%;
@@ -802,7 +802,7 @@ figure .img-grid img {
           transform: translate(0px, 0px);
           transition-delay: 0s; }
         .phone:hover figcaption {
-          left: -100%;
+          left: -75%;
           transform: scale(1);
           transition-delay: .5s; } }
 
@@ -929,7 +929,7 @@ table th {
         height: 0; } } }
   .role__title {
     margin: 0 0 0.7rem 0;
-    font-size: 1em; }
+    font-size: 1rem; }
     .role__title:after {
       color: #848ACC;
       content: '';
@@ -950,7 +950,7 @@ table th {
     margin-right: 0.7rem;
     display: inline-block;
     color: #666;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-right: 0.7rem; }
     @media (min-width: 60em) {
       .role__list-item {
@@ -998,7 +998,7 @@ table th {
   margin: 0;
   font-weight: 600;
   margin-bottom: 0.3em;
-  font-size: 1em;
+  font-size: 1rem;
   text-decoration: underline;
   text-decoration-color: #848ACC; }
 
@@ -1010,14 +1010,14 @@ table th {
 .article__summary {
   color: #212121;
   font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0;
   line-height: 1.2; }
 
 .article__meta {
   color: #212121;
   font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   margin-top: 0.7rem;
   margin-bottom: 0; }
 
@@ -1053,20 +1053,23 @@ table th {
   .article--preview + .article--preview {
     margin-top: 2.1rem; }
 
-aside {
+.main-content aside {
   border-top: 1px solid #ddd;
   color: #666;
   margin-top: 2.1rem;
   padding-top: 0.7rem;
-  font-size: 0.8em; }
+  font-size: 0.8rem; }
+  .main-content aside p {
+    font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 0.8rem; }
   @media (min-width: 80em) {
-    aside {
+    .main-content aside {
       position: absolute;
       width: 12rem;
       left: -14rem;
       text-align: right; }
       @supports (display: grid) {
-        aside {
+        .main-content aside {
           position: static;
           width: auto;
           height: 0;
@@ -1083,7 +1086,7 @@ aside {
     margin: 0;
     margin-right: 0.5em;
     font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 0.8em; }
+    font-size: 0.8rem; }
     .tags__item:before {
       content: '✓';
       display: inline-block;
@@ -1094,7 +1097,7 @@ aside {
 .disclaimer {
   display: block;
   font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding: 1em;
   background-color: #F2F2F4;
   border-radius: .3em;
@@ -1118,12 +1121,12 @@ aside {
 .footnotes {
   grid-column: content; }
   .footnotes ol {
-    font-size: 1em;
+    font-size: 1rem;
     max-width: none; }
   .footnotes li {
     font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     padding: 0.7rem;
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: .3em;
     transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1); }
     .footnotes li:target {
@@ -1133,7 +1136,7 @@ aside {
 .footnote-ref a {
   text-decoration: none;
   font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #fff;
   background-color: #848ACC;
   border-radius: 2em;
@@ -1267,13 +1270,13 @@ a {
 .intro {
   margin-bottom: 2.1rem; }
   .intro p {
-    font-size: 1em; }
+    font-size: 1rem; }
   @supports (display: grid) {
     @media (min-width: 60em) {
       .intro {
         grid-column: 2 / span 3; } } }
   .intro__title {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 2.1rem; }
     .intro__title:after {

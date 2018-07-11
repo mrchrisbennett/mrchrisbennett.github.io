@@ -25,7 +25,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.37.1" /><link rel="stylesheet" href="http://www.chrisbennett.io/styles/styles.css?1531330253" />
+  <meta name="generator" content="Hugo 0.37.1" /><link rel="stylesheet" href="http://www.chrisbennett.io/styles/styles.css?1531331323" />
 
   
 
@@ -162,7 +162,7 @@
 <li>Tell the container to be a grid container.</li>
 <li>Create a grid with four equal columns.</li>
 <li>Give the columns a gutter of 4%.</li>
-<li>Remove the clearfix, as the pseudo elements will become grid items.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></li>
+<li>Remove the clearfix, because the pseudo elements will turn into grid items.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></li>
 </ul>
 
 <pre><code>@supports (display: grid) {
@@ -176,7 +176,7 @@
 		grid-gap: 4%;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
-	
+
 	.container:before, .container:after {
 	  display: none;
 	}
