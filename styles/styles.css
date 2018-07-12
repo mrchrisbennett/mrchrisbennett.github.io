@@ -691,6 +691,12 @@ figure {
       padding: 2%; }
 
 @supports (display: grid) {
+  @media (min-width: 60em) {
+    .feature-img {
+      grid-column: content;
+      margin-bottom: 2.1rem; } } }
+
+@supports (display: grid) {
   .side {
     align-items: flex-start;
     grid-column: sidebar;
