@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
 @import url("https://rsms.me/inter/inter-ui.css");
 @supports (display: grid) {
+  .grid {
+    width: 100%;
+    grid-column: 1 / -1 !important;
+    display: grid;
+    grid-gap: 0 2%;
+    grid-template-columns: [edge-begin] minmax(0.5em, 1fr) [aside] repeat(2, minmax(1em, 4.5em)) [aside-end content] repeat(7, minmax(1em, 4.5em)) [content-end sidebar] repeat(3, minmax(1em, 4.5em)) [sidebar-end] minmax(0.5em, 4fr) [edge-end]; } }
+
+@supports (display: grid) {
   * {
     grid-column: aside;
     grid-column-end: sidebar-end; }
@@ -1137,15 +1145,15 @@ table th {
 .footnote-ref a {
   text-decoration: none;
   font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   color: #fff;
   background-color: #848ACC;
   border-radius: 2em;
-  height: 1.3em;
-  width: 1.3em;
+  height: 0.7rem;
+  width: 0.7rem;
   display: inline-block;
   text-align: center;
-  line-height: 1.3em;
+  line-height: 0.7rem;
   font-weight: 400;
   transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1);
   /*&:before {
