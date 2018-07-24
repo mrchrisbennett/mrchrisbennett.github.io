@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on Chris Bennett</title>
+    <link>http://www.chrisbennett.io/tags/writing/</link>
+    <description>Recent content in Writing on Chris Bennett</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.chrisbennett.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Design of Project for Client</title>
+      <link>http://www.chrisbennett.io/cya/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.chrisbennett.io/cya/</guid>
+      <description>Some of my work lives behind an NDA, or some other form of agreement that says I can&amp;rsquo;t show it to you. Bummer. So, in place of that work, here is a choose your own adventure of how some of that work may have gone.1
+The Start You sit alone at your desk. You gaze into the radiating glow of your monitor, waiting for inspiration. It doesn&amp;rsquo;t show up.</description>
+    </item>
+    
+  </channel>
+</rss>

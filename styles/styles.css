@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i");
-@import url("https://rsms.me/inter/inter-ui.css");
 @supports (display: grid) {
   .grid {
     width: 100%;
@@ -559,12 +557,12 @@ li + li {
 
 ol {
   list-style: none;
-  padding-left: 1em; }
+  padding-left: 1rem; }
   ol li {
     counter-increment: item; }
   ol li:before {
     font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     margin-right: 1rem;
     content: counter(item);
     border-radius: 100%;
@@ -577,7 +575,7 @@ ol {
     display: inline-block;
     float: left;
     margin-left: -3rem;
-    margin-top: 0.2em; }
+    margin-top: 0.1rem; }
 
 strong {
   font-weight: 600; }
@@ -702,8 +700,9 @@ figure {
     grid-column: sidebar;
     height: 0; } }
 
-figcaption {
+figcaption, .main-content figcaption > p {
   color: #666;
+  font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
   outline: 0;
   margin-top: 1.05rem;
@@ -1140,7 +1139,6 @@ table th {
     max-width: none; }
   .footnotes li {
     font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    padding: 0.7rem;
     font-size: 1rem;
     border-radius: .3em;
     transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1); }
@@ -1209,6 +1207,56 @@ note {
     float: left;
     margin-left: -1em;
     width: 1em; }
+
+.choose > * {
+  grid-column: 3 / span 5; }
+
+.choose figure {
+  grid-column: 8 / span 5 !important; }
+
+.choose h2, .choose h3 {
+  padding-top: 2em;
+  transform: translateY(1em); }
+  .choose h2 + figure, .choose h3 + figure {
+    opacity: 0; }
+
+.choose :target:not(li):before {
+  content: '☞';
+  font-size: 2.5em;
+  float: left;
+  height: 0;
+  position: relative;
+  top: -0.25em;
+  animation: 3s pointer ease-in-out infinite;
+  transform: translateX(-4.5rem); }
+
+.choose :target:not(li) + figure {
+  opacity: 1;
+  transform: translateY(4em); }
+
+.choose figure {
+  transition: all 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  grid-column: sidebar;
+  height: 0;
+  position: relative;
+  transform: translateY(6em);
+  position: fixed;
+  top: -2rem;
+  right: 2rem;
+  width: 45%; }
+  .choose figure img {
+    box-shadow: 0.2em 0.5em 4em rgba(0, 0, 0, 0.15); }
+
+.choose .footnotes {
+  margin-top: 8em; }
+
+@keyframes pointer {
+  0% {
+    transform: translateX(-4.5rem); }
+  50% {
+    transform: translateX(-3.5rem); }
+  100% {
+    transform: translateX(-4.5rem); } }
 
 a {
   color: #848ACC;
