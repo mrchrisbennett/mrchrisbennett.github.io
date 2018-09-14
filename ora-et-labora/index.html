@@ -25,7 +25,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.37.1" /><link rel="stylesheet" href="http://www.chrisbennett.io/styles/styles.css?1532983606" />
+  <meta name="generator" content="Hugo 0.37.1" /><link rel="stylesheet" href="http://www.chrisbennett.io/styles/styles.css?1536936925" />
   
 
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Code+Pro:400">
@@ -89,13 +89,11 @@
        <h2 class="role__title">Role</h2>
        <ul class="role__list">
         
-          <li class="role__list-item">component design and implementation</li>
+          <li class="role__list-item">branding</li>
         
           <li class="role__list-item">front-end design</li>
         
-          <li class="role__list-item">front-end development</li>
-        
-          <li class="role__list-item">prototyping</li>
+          <li class="role__list-item">front-end dev</li>
         
           <li class="role__list-item">visual design</li>
         
@@ -110,54 +108,104 @@
     <div class="main-content ">
       
 
-<p>1
-In 1848, 44 Roman Catholic Trappist monks established the Abbey of Gethsemani in Trappist, Kentucky. The Order of Cistercians of the Strict Observance follow the Rule of St. Benedict – peace, work, and prayer. Supporting themselves through farming, the monks now sell homemade fruitcakes, fudge, and more. Despite having the best bourbon fudge  around<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>, they needed help to make it a bit easier for their customers to buy more of it.</p>
+<p>In 1848, 44 Roman Catholic Trappist monks established the Abbey of Gethsemani in Kentucky. The Order of Cistercians of the Strict Observance follow the Rule of St. Benedict, focusing on peace, work, and prayer. Originally supporting themselves through farming, the monks now sell <a href="https://www.gethsemanifarms.org/">homemade fruitcakes, fudge, and more</a>. Despite having the best bourbon fudge around,<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> they needed help to make it a bit easier for their customers to buy more of it.</p>
 
 <h2 id="goals">Goals</h2>
 
 <ol>
-<li><strong>Rework mobile navigation.</strong><br />
+<li><strong>Rework mobile navigation.</strong>
 The previous mobile nav wasn&rsquo;t great. It worked, it was plain, it was obvious, but it took up way too much space and was not visually unified.</li>
-<li><strong>Improve product sorting.</strong><br />
-The monks have dozens options for fudge, fruitcakes, and all sorts of other gifts and combinations of these.</li>
-<li><strong>Simplify and streamline visual styles.</strong><br />
-Originally, they had a handful of button styles, colors thrown about for no obvious reason, and other visual inconsistencies that needed to be ironed out.</li>
+<li><strong>Improve product sorting.</strong>
+The monks have dozens options for fudge, fruitcakes, and all sorts of other gifts and combinations of these. They needed a better way to sort and sift through their product listings.</li>
+<li><strong>Refresh visual styles.</strong>
+Originally, they had a handful of button styles, colors thrown about for no obvious reason, and other visual inconsistencies that needed to be reined in and reworked.</li>
 </ol>
 
-<figure class="pull-right">
+<!-- <figure class="pull-right">
   <img src="/img/gf-seal-rough.png" alt="gethsemani farms seal">
-</figure>
+</figure> -->
 
 <h2 id="mobile-navigation">Mobile navigation</h2>
 
-<p>The original state of their mobile navigation wasn&rsquo;t great. It wasn&rsquo;t pretty, but at least it was obvious. The problem was, obviously, that this came at the cost of usefulness and vertical screen real estate. Additionally, there were several visual patterns for the navigation:</p>
+<p>The original state of their mobile navigation wasn&rsquo;t great. It might not have been pretty, but it was obvious. The problem was, obviously, that this came at the cost of usefulness and vertical real estate. This would have been fine had the menu items been somehow collapsable, but taking up this much space on every screen just for a few links was a bit much. Additionally, there were multiple divergent visual patterns for the navigation items: logo, menu links, and login.</p>
 
-<ul>
-<li>Logo</li>
-<li>Menu items</li>
-<li>Login</li>
-</ul>
+<figure class="figure--full">
+  <img src="/img/gf/gf-nav-sketch.png" alt="Initial mobile navigation sketches">
+  <figcaption>Mobile navigation sketches</figcaption>
+</figure>
+
+<p>The goals for the new navigation, in contrast with the previous iteration, were simplicity and consistency. The original version took up way too much space, so we needed to collapse things a bit, but without hiding everything. We kept the account, bag, and search toggle visible at all times, and then hid the product category links under the menu toggle. We also sought to unite the navigation with a consistent visual pattern for the navigation items (icon + text instead of icon, image, or text).</p>
+
+<figure class="pull-right mobile-top">
+  <img src="/img/gf/gf-old-nav.jpg" alt="Old mobile navigation">
+  <figcaption>Old mobile navigation</figcaption>
+  <img src="/img/gf/gf-new-nav.jpg" alt="New mobile navigation">
+  <figcaption>New mobile navigation</figcaption>
+</figure>
+
+<h3 id="fix-what-you-break">Fix what you break</h3>
+
+<p>One thing that we did not anticipate was a seemingly small, but very popular feature of their site: reordering. Many of their repeat customers simply place a reorder instead of starting from scratch. Their fudge makes for popular gifts for grandkids, and grandma doesn&rsquo;t want to have to load up her shopping cart every November to send out her trademark Christmas fudge gift. This is where reordering comes in. The problem was that initially we had the reorder link in the footer, and on the customer account page. But users weren&rsquo;t finding it easily enough. I am a big proponent of <a href="https://www.lukew.com/ff/entry.asp?1945">obvious always wins</a>, so we put it right alongside the main account-related links in the navigation.</p>
+
+<figure class="pull-right mt">
+  <img src="/img/gf/gf-reorder.png" alt="Reorder link">
+  <figcaption>Reorder link</figcaption>
+</figure>
 
 <h2 id="product-sorting">Product sorting</h2>
 
-<p>With their original site, the only way to sort products was by category.</p>
-
-<h2 id="checkout">checkout</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<h2 id="additional-design">Additional design</h2>
+<p>With the original design, the only way to sort products was by category. You could pick fudge, fruitcakes, or whatever, and that was it. If you just wanted to see products that had 5lbs of fudge or more, you had to manually sift through their product listings. You could search for a specific product, but if you wanted something in between these two extremes, you didn&rsquo;t have an option. As their product line grew, they needed a better way for customers to find just the right gift for their grandkids (and maybe some extra for themselves).</p>
 
 <figure class="figure--full">
-  <img src="/img/gf-design.jpg" alt="gethsemani farms seal">
-  <figcaption>Design assets</figcaption>
+  <img src="/img/gf/gf-sketch.png" alt="gethsemani farms sorting sketch">
+  <figcaption>Product sorting and filtering sketches</figcaption>
 </figure>
+
+<p>We tried a few approaches to filtering products:</p>
+
+<div>
+  <p class="pill">pills</p>
+  <select name="example" id="">
+    <option value="Select">Select elements</option>
+    <option value="Fruitcake">Fruitcake</option>
+    <option value="Fudge">Fudge</option>
+    <option value="And more">And more</option>
+  </select>
+  <p class="tab">tabs</p>
+</div>
+
+<p>We eventually landed on groups of checkboxes for a few reasons: To easily see the selection criteria at a glance across all screen sizes, semantically they made the most sense, and it made multiple selections much easier.</p>
+
+<figure class="pull-right">
+  <img src="/img/gf/gf-filter.png" alt="Product filter">
+  <figcaption>Product filter</figcaption>
+</figure>
+
+<h2 id="brand-design-elements">Brand design elements</h2>
+
+<p>In addition to making it easier to find and sort through products across all screen sizes, I took the opportunity to refresh some of their visual brand elements. This ran the gamut from small product category icons to stamp-like type lockups.</p>
+
+<figure class="figure--full">
+  <img src="/img/gf-design.jpg" alt="Additional design elements">
+  <figcaption>A handful of additional design elements</figcaption>
+</figure>
+
+<h2 id="sneaking-in-css-grid">Sneaking in CSS Grid</h2>
+
+<p>I&rsquo;ve been trying to use CSS Grid wherever I can, even in small, not really obvious ways. I find it solves some layout problems so well, and only requires simple fallbacks, that it&rsquo;s a no-brainer. One example is the product detail gutter rule. The two columns could be different heights, but I wanted the vertical rule in the gutter to span the tallest column. Because grid items take the height of their tallest neighbor, I could just give the main product info column a left border and call it a day.</p>
+
+<figure class="pull-right">
+  <img src="/img/gf/gf-grid.jpg" alt="Flexible full-height product detail gutter rule made easy with CSS Grid">
+  <figcaption>Flexible full-height product detail gutter rule made easy with CSS Grid</figcaption>
+</figure>
+
+<p>In the past, I would have had to float the columns and give them both a border plus some negative margin to overlap the borders, or a box-shadow for the border. I could have used flexbox to solve some of this, but I also wanted to be able to move the product meta info (detailed description, ingredients, etc.) into the left column on larger screen sizes. With grid, it was as simple as telling that div to go into the first column. Done. And if the browser doesn&rsquo;t support grid? That&rsquo;s fine, it gets a similar layout without the full height vertical rule.</p>
 <div class="footnotes">
 
 <hr />
 
 <ol>
-<li id="fn:1">My favorite is the bourbon chocolate with walnuts, but you pretty much can&rsquo;t go wrong with any of their bourbon chocolate fudges. But maybe not the mint julep fudge. If you love mint juleps, then you&rsquo;ll love their fudge version. Otherwise, stick with the plain chocolate bourbon fudge, or with walnuts or pecans if you want some variety.
+<li id="fn:1">My favorite is the bourbon chocolate with walnuts, but you pretty much can&rsquo;t go wrong with any of their bourbon chocolate fudges. But maybe not the mint julep fudge. If you love mint juleps, you&rsquo;ll love it. Otherwise, stick with the plain chocolate bourbon fudge, or with walnuts or pecans if you want some variety.
  <a class="footnote-return" href="#fnref:1">↩</a></li>
 </ol>
 </div>
@@ -166,7 +214,7 @@ Originally, they had a handful of button styles, colors thrown about for no obvi
   </section>
   <footer>
     
-      <p class="disclaimer"><strong>Friendly disclaimer:</strong> This project was done as an employee of Net Tango. I was responsible for the front-end design. Other people were responsible for the rest of the project, such as project management, back-end development, and many other tasks beyond my expertise. Thoughts, feelings, and opinions about the project are my own.</p>
+      <p class="disclaimer"><strong>Friendly disclaimer:</strong> This project was done as an employee of Net Tango. I was responsible for the front-end design and development. Other people were responsible for the rest of the project, such as project management, back-end development, and many other tasks beyond my expertise. Thoughts, feelings, and opinions about the project are my own.</p>
     
     
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front End Dev on Chris Bennett</title>
+    <link>http://www.chrisbennett.io/tags/front-end-dev/</link>
+    <description>Recent content in Front End Dev on Chris Bennett</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.chrisbennett.io/tags/front-end-dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gethsemani Farms</title>
+      <link>http://www.chrisbennett.io/ora-et-labora/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.chrisbennett.io/ora-et-labora/</guid>
+      <description>In 1848, 44 Roman Catholic Trappist monks established the Abbey of Gethsemani in Kentucky. The Order of Cistercians of the Strict Observance follow the Rule of St. Benedict, focusing on peace, work, and prayer. Originally supporting themselves through farming, the monks now sell homemade fruitcakes, fudge, and more. Despite having the best bourbon fudge around,1 they needed help to make it a bit easier for their customers to buy more of it.</description>
+    </item>
+    
+  </channel>
+</rss>
