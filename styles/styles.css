@@ -894,7 +894,7 @@ figure .img-grid img {
 .mobile img {
   border: 3px solid #F2F2F4;
   border-radius: 1em;
-  box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.1); }
+  box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.15); }
 
 .mobile-top figcaption {
   margin-bottom: 2em; }
@@ -908,7 +908,7 @@ figure .img-grid img {
   border-right-width: 3px;
   border-style: solid;
   border-radius: 1em 1em 0 0;
-  box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.1); }
+  box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.15); }
 
 table {
   margin-bottom: 1.5em;
@@ -1368,6 +1368,24 @@ a {
     a:visited:hover {
       color: #848ACC; }
 
+button, .button {
+  background-color: #848ACC;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding: 0.7rem 2.1rem;
+  border: 0;
+  font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  button:visited, .button:visited {
+    color: #fff; }
+  button--small, .button--small {
+    font-size: 1rem;
+    padding: 0.7rem; }
+  button:hover, button:visited:hover, .button:hover, .button:visited:hover {
+    cursor: pointer;
+    background-color: #6068bd;
+    color: #fff; }
+
 .p-title {
   line-height: 1;
   margin: 0;
@@ -1491,19 +1509,6 @@ a {
 .is-toggled:hover {
   cursor: n-resize; }
 
-button {
-  background-color: #848ACC;
-  border-radius: 5px;
-  color: #fff;
-  display: inline-block;
-  padding: 0.7rem 2.1rem;
-  border: 0;
-  font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
-  button:hover {
-    cursor: pointer;
-    background-color: #6068bd;
-    color: #fff; }
-
 .contact-form {
   margin-bottom: 4.2rem; }
   .contact-form input, .contact-form label, .contact-form textarea {
@@ -1525,3 +1530,78 @@ button {
   .contact-form label {
     font-weight: 400;
     margin: 2.1rem 0 0.7rem; }
+
+.application {
+  grid-row: 2; }
+  @supports (display: grid) {
+    .application {
+      width: 100%;
+      grid-column: 1 / -1 !important;
+      display: grid;
+      grid-gap: 0 2%;
+      grid-template-columns: [edge-begin] minmax(0.5em, 1fr) [aside] repeat(2, minmax(1em, 4.5em)) [aside-end content] repeat(7, minmax(1em, 4.5em)) [content-end sidebar] repeat(3, minmax(1em, 4.5em)) [sidebar-end] minmax(0.5em, 4fr) [edge-end]; } }
+  .application > :first-child {
+    margin-top: 0; }
+
+.preview {
+  border-radius: 1em;
+  background-color: #fff;
+  margin: 4em auto;
+  position: relative;
+  box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.15); }
+  .preview p {
+    font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  .preview small {
+    color: #aaa;
+    opacity: 0;
+    transition: 0.5s ease; }
+  .preview .button {
+    margin-top: 1.05rem;
+    margin-right: 0.7rem; }
+    .preview .button:hover + small {
+      opacity: 1; }
+  .preview__body {
+    padding: 1em 2em; }
+    @media (min-width: 60em) {
+      .preview__body {
+        padding: 1em 3em 2em; } }
+  .preview__image-container {
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+  .preview__image {
+    transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1); }
+  .preview__extra {
+    transition: 0.3s cubic-bezier(0.5, 0, 0.1, 1);
+    position: absolute;
+    top: 0;
+    right: -20%;
+    transform: translateY(50%) translateX(25%);
+    opacity: 0; }
+    .preview__extra img {
+      vertical-align: middle;
+      background-color: #fff;
+      box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.15); }
+      @supports (object-fit: cover) {
+        .preview__extra img {
+          object-fit: cover;
+          height: 10em;
+          width: 10em;
+          border-radius: 100%; } }
+    .preview__extra p {
+      background-color: #848ACC;
+      color: #fff;
+      display: inline-block;
+      margin: 0;
+      padding: 0.5em;
+      font-size: 0.8rem;
+      font-family: "avenir next", avenir, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-style: italic;
+      box-shadow: 0.5em 1em 3em rgba(0, 0, 0, 0.15); }
+      @supports (object-fit: cover) {
+        .preview__extra p {
+          transform: translateX(-4em); } }
+  .preview:hover .preview__image {
+    opacity: 0.5; }
+  .preview:hover .preview__extra {
+    transform: translateY(30%) translateX(25%);
+    opacity: 1; }

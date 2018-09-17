@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Progressively Enhancing CSS Grid: Floats and Pseudos and IE, Oh My!</title>
-  <meta property="og:title" content="Progressively Enhancing CSS Grid: Floats and Pseudos and IE, Oh My!" />
-  <meta name="twitter:title" content="Progressively Enhancing CSS Grid: Floats and Pseudos and IE, Oh My!" />
+  <title>Covenant Eyes</title>
+  <meta property="og:title" content="Covenant Eyes" />
+  <meta name="twitter:title" content="Covenant Eyes" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Chris Bennett" />
-  <meta property="og:url" content="http://www.chrisbennett.io/posts/progressive-enhancement-with-css-grid/" />
+  <meta property="og:url" content="http://www.chrisbennett.io/covenant-eyes/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -61,163 +61,55 @@
 
 
 
-<article class="article grid" >
-  
-  
-    <img class="feature-img" src="/img/grid-feature.svg" alt="">
-  
-  <section class="article__body">
-
-    <header class="post-header">
-
-    <div class="">
-      <h1 class="post-title">Progressively Enhancing CSS Grid: Floats and Pseudos and IE, Oh My!</h1>
-      
-
-      
-
-      
-        <p class="carticle__meta">
-          
-          <time class="article__date" datetime="2018-01-11T00:00:00Z">
-            January 11, 2018
-          </time>
-        </p>
-        
-
-      
+<article class="">
+  <section class="">
 
 
-    
-    
-    </div>
-    
-  </header>
 
-  
-    <div class="main-content ">
-      
+    <div class="main-content">
+      <header class="">
+        <h1>Hi Jeff, I&#39;m Chris Bennett</h1>
+      </header>
+      <p>I am a designer with more than a decade of experience crafting solutions in a variety of contexts – from local churches to Fortune 500 companies. About 10 years ago I used Covenant Eyes for the first time, and since then I've watched from a distance as you and the team stick to your mission while continuing to improve the product. Now, I'd like to join you in that work!</p>
 
-<p>So you want to use CSS Grid, but you also need to support IE9, Opera Mini, and Blackberry Browser 10? No problem. With a few key things to keep in mind, <a href="https://alistapart.com/article/understandingprogressiveenhancement">progressively enhancing</a> a design with CSS Grid is easy.</p>
+<p>Some samples of my work are below. More of my work, a few things I wrote, and links to other places you can find me on the World Wide Web are <a href="http://chrisbennett.io">here</a> (or just click/tap/touch the monogram at the top of this page).</p>
 
-<h2 id="a-basic-item-grid">A Basic Item Grid</h2>
+<section class="preview">
+  <div class="preview__image-container">
+    <img src="/img/gf-desktop.jpg" alt="" class="preview__image">
+  </div>
+  <div class="preview__body">
+    <h2>Gethsemani Farms</h2>
+    <p>I handled the design and much of the front-end development for the redesign of the Gethsemani Farms retail site, particularly focusing on rethinking their mobile navigation and adding features such as product filtering, in addition to a branding refresh.</p>
+    <p><a class="button button--small" href="/ora-et-labora">Read more</a> <small><em>(and also get my fudge recommendation)</em></small></p>
+  </div>
+  <div class="preview__extra">
+    <img src="/img/gf/gf-nav-sketch.png" alt="">
+    <p>See my beautiful navigation sketches. <em>#handlettering</em></p>
+  </div>
+</section>
 
-<p>Let&rsquo;s say you want to lay out a simple grid of items such as cards, tiles, or whatever you want to call them. Our HTML would look something like this:</p>
+<section class="preview">
+  <div class="preview__image-container">
+    <img src="/img/lojic-desktop.jpg" alt="" class="preview__image">
+  </div>
+  <div class="preview__body">
+    <h2>LOJIC</h2>
+    <p>I helped the Louisville Jefferson County Information Consortium (yeah, I know, it's a mouthful) rethink how to more effectively deliver their interactive maps and custom mapping services. </p>
+    <p><a class="button button--small" href="/lojic">Read more</a> <small><em>(and learn the pitfalls of refreshing a logo)</em></small></p>
+  </div>
+  <div class="preview__extra">
+    <img src="/img/lojic-wireframe.png" alt="lojic wireframe">
+    <p>See a few of my favorite grays in a functional wireframe.</p>
+  </div>
+</section>
 
-<pre><code>&lt;div class=&quot;container&quot;&gt;
-	&lt;div class=&quot;card&quot;&gt;
-		&lt;p&gt;Card content.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;card&quot;&gt;
-		&lt;p&gt;More card content.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;card&quot;&gt;
-		&lt;p&gt;A bit more card content.&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;card&quot;&gt;
-		&lt;p&gt;And even more card content.&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p>And our CSS would look something like this:</p>
-
-<pre><code>.container:before, .container:after {
-  content: &quot;&quot;;
-  display: table;
-  clear: both;
-}
-
-.card {  
-	float: left;
-	width: 22%;
-	margin-right: 4%;
-}
-.card:last-child {
-	margin-right: 0;
-}
-</code></pre>
-
-<p>Now what if we want to replicate this layout, but with CSS Grid?</p>
-
-<p>First, we set up a feature query to make sure only browsers that can use CSS Grid get our new CSS.</p>
-
-<pre><code>@supports (display: grid) {
-	our fancy new css will go here
-}
-</code></pre>
-
-<p>Next we reset our card widths, margins, and floats. The great thing about CSS Grid is that it puts the parents in charge of layout, not the children. All of our column styling will be applied to the parent container, not the child items.</p>
-
-<pre><code>@supports (display: grid) {
-	.card {
-		width: auto;
-		margin: auto;
-		float: none;
-	}
-}
-</code></pre>
-
-<p>Now that our cards are back to their defaults, we need to set up our grid. Here&rsquo;s what we need to do:</p>
-
-<ul>
-<li>Tell the container to be a grid container.</li>
-<li>Create a grid with four equal columns.</li>
-<li>Give the columns a gutter of 4%.</li>
-<li>Remove the clearfix, because the pseudo elements will turn into grid items.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></li>
-</ul>
-
-<pre><code>@supports (display: grid) {
-	.card {
-		width: auto;
-		margin: auto;
-		float: none;
-	}
-	.container {
-		display: grid;
-		grid-gap: 4%;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-
-	.container:before, .container:after {
-	  display: none;
-	}
-}
-</code></pre>
-
-<p>There we go, back to where we started with just a few extra lines of CSS. Now let&rsquo;s make it better.</p>
-
-<pre><code>@supports (display: grid) {
-	.container {
-		display: grid;
-		grid-gap: 4%;
-		grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-	}
-</code></pre>
-
-<p>For the container, we change the column setup. Here&rsquo;s the breakdown:</p>
-
-<ul>
-<li><strong>repeat:</strong> Creates a grid of equal column widths.</li>
-<li><strong>auto-fill:</strong> Fills in as many columns as it can, stretching them to fill any extra space (sort of similar to flex items). Items will automatically fill in space as they can, all without using media queries.</li>
-<li><strong>minmax:</strong> Establishes a minimum and maximum width for the columns so that our cards don&rsquo;t get too small or too big. In our case the columns will be at least 10em wide.</li>
-</ul>
-
-<p>And there we have it. With just a few extra lines of CSS we override our basic layout with a more flexible, responsive design. The best part is now we can change the design however we want, knowing that older devices and browsers will still get a great experience.</p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">This is similar to how Safari treats pseudo elements as flex items when using flexbox. It introduces them to the flow of the rest of the content and throws off the intended layout.
- <a class="footnote-return" href="#fnref:1">↩</a></li>
-</ol>
-</div>
+<p><h2>Let&rsquo;s talk</h2>
+<p>I am happy to answer questions and even happier to talk about next steps at <a href="mailto:christopherebennett@gmail.com">christopherebennett@gmail.com</a></p></p>
 
     </div>
   </section>
   <footer>
-    
     
     
     
