@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>404 Page not found</title>
-  <meta property="og:title" content="404 Page not found" />
-  <meta name="twitter:title" content="404 Page not found" />
+  <title>Waystar Task Assessment</title>
+  <meta property="og:title" content="Waystar Task Assessment" />
+  <meta name="twitter:title" content="Waystar Task Assessment" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Chris Bennett" />
-  <meta property="og:url" content="" />
+  <meta property="og:url" content="http://www.chrisbennett.io/waystar/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -21,7 +21,8 @@
   
 
   
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
+  
   
   
   <meta name="generator" content="Hugo 0.37.1" /><link rel="stylesheet" href="http://www.chrisbennett.io/styles/styles.css?1542641735" />
@@ -37,7 +38,7 @@
     
     
     <a class="logo" href="http://www.chrisbennett.io/">
-<svg version="1.1"
+      <svg version="1.1"
    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    x="0px" y="0px" width="53.5px" height="58px" viewBox="0 0 53.5 58" style="enable-background:new 0 0 53.5 58;"
    xml:space="preserve">
@@ -51,7 +52,6 @@
 <line class="logo-stroke" x1="20" y1="47.5" x2="20" y2="56"/>
 <path class="logo-stroke--linecap" d="M20,20c0,9,9,9,9,9h9c7.5,0,13.5-6,13.5-13.5S45.5,2,38,2H2"/>
 </svg>
-
     </a>
     
     
@@ -59,9 +59,163 @@
   </header>
   <main id="main" class="main container">
 
-<section class="p-notfound">
-  <h1>404</h1>
-</section>
+
+
+<article class="article grid" >
+  
+  
+  <section class="article__body">
+
+    <header class="post-header">
+
+    <div class="">
+      <h1 class="post-title">Waystar Task Assessment</h1>
+      
+
+      
+
+      
+
+      
+
+
+    
+    
+    </div>
+    
+  </header>
+
+  
+    <div class="main-content waystar">
+      
+
+<p><a class="button" href="https://www.figma.com/proto/NEkzIxrcKoqOAzw7RN8Mm9g8/Waystar-Task-Assessment?node-id=22%3A41&scaling=min-zoom">View the wireframe</a></p>
+
+<h2 id="business-goal">Business Goal</h2>
+
+<p>&ldquo;We want to offer our clients the ability to store information about their patients, including financial information to collect payments on demand.&rdquo;</p>
+
+<p>First up, what should this thing do?</p>
+
+<ol>
+<li>Store information</li>
+<li>Collect payments</li>
+</ol>
+
+<p>Easy enough. But, &ldquo;What kind of information are we storing?&rdquo; and, &ldquo;How do we collect payments?&rdquo; The requirements answered both, adding data and specific actions.</p>
+
+<h3 id="information-data">Information Data</h3>
+
+<ul>
+<li>email</li>
+<li>address</li>
+<li>account #</li>
+<li>credit card</li>
+<li>bank account</li>
+</ul>
+
+<h3 id="information-actions">Information Actions</h3>
+
+<ul>
+<li>create</li>
+<li>edit</li>
+<li>search</li>
+</ul>
+
+<h3 id="payment-actions">Payment Actions</h3>
+
+<ul>
+<li>view history</li>
+<li>collect payment</li>
+<li>add card/account</li>
+</ul>
+
+<p>Knowing what data I&rsquo;m working with and what to do with it, I started to sketch out some rudimentary ideas just to get something on paper.</p>
+
+<figure class="figure--full">
+    <img class="" src="/img/waystar/process.jpg" alt="Waystar process">
+    <figcaption>Initial process sketches</figcaption>
+</figure>
+
+<p>Since the data needed to be easily searched, and therefore probably sorted or filtered in some way, laying out the records in a tabular format made the most sense. This would allow the user to easily sift through large numbers of records, as well as sort and filter the data based on any number of available variables.</p>
+
+<figure class="figure--full">
+    <img class="" src="/img/waystar/tabular.png" alt="Waystar tabular data">
+    <figcaption>Tabular data</figcaption>
+</figure>
+
+<h2 id="interactivity">Interactivity</h2>
+
+<p>Presenting the data was not a big problem. But working out the best way to interact with the data the was different. I had boiled down the overall functionality into five primary actions:</p>
+
+<ol>
+<li>Create a record</li>
+<li>Edit a record</li>
+<li>Search/filter/sort records</li>
+<li>View payment history</li>
+<li>Collect a payment</li>
+</ol>
+
+<p>Two of these are global actions: create a record, and search/filter/sort records. They are not tied to a specific patient record. The other three, in contrast, are record-specific actions. This made it easy to initially determine what actions would be included with each record.</p>
+
+<figure class="pull-right">
+  <img src="/img/waystar/specific.png" alt="Record-specific actions">
+  <figcaption>Record-specific actions</figcaption>
+</figure>
+
+<figure class="figure--full">
+    <img class="" src="/img/waystar/global.png" alt="global actions">
+    <figcaption>Global actions</figcaption>
+</figure>
+
+<h3 id="potential-problems">Potential Problems</h3>
+
+<p>I like to make things obvious. But sometimes obvious is not elegant or simple. Including the three actions with every single record entry makes it obvious what the user can do with each record, but there are some possible caveats.</p>
+
+<ol>
+<li>What if we increase the data displayed for each record? The three actions currently take up a sizable portion of horizontal space. If we add the full physical address, date of birth, most recent payment, or some sort of status indicator, then it gets messy real fast.</li>
+<li>What if we want to add additional actions? Just like adding more data, space is already tight.</li>
+<li>Do all three need to be visible all the time? What is the most common thing users do with records? How often do they edit records? Since a primary feature of this product is collecting payments, should that be the only – or at least the prioritized – available action?</li>
+</ol>
+
+<p>With more information, research, and/or time, I would want to explore these questions, and more. Perhaps hiding the available actions until a user hovers over or clicks on a record is a better solution that also affords more flexibility. The current solution is a fine starting point, and illustrates one approach I like to take: make things as painfully obvious as possible, and start scaling things back if they get in the way.</p>
+
+<h2 id="search">Search</h2>
+
+<p>Initially I tried putting the search in a left sidebar. This could work fine, but I wasn&rsquo;t sure it was necessary. First, it took up horizontal real estate that might better be left for the record data. Second, the functionality required did not necessitate a long list of filters and search options.</p>
+
+<figure class="pull-right">
+  <img src="/img/waystar/search.jpg" alt="Waystar search sketch">
+  <figcaption>Initial search ideas</figcaption>
+</figure>
+
+<p>I would want to know a few more things about how users search in order to confirm this is a useful approach: How do users expect to search? Do they search for one thing at a time, or do they search using multiple parameters? Or is it both? Questions like these would help determine next steps for refining the search feature.</p>
+
+<p>Along these lines, I would ask for more information regarding, &ldquo;Search for a patient record using appropriate data elements.&rdquo; I would like a list of these elements, or, additional clarity regarding the types of searches a user would use. Do we have any data for a similar search functionality?</p>
+
+<h2 id="additional-questions">Additional Questions:</h2>
+
+<ol>
+<li>Who are the users? What kind of roles are they in? Is this their primary task, or one among many?</li>
+<li>Are there other actions that need to be taken on records? Only two are listed: create and edit. Do users need to do anything else with the records? For example: flag, assign to some category, delete, etc.?</li>
+<li>How frequently are payment histories viewed? Is it ok to bury that option somewhere or should it be front and center? Is there any action they need to take on these? Or do they just view them?</li>
+<li>When creating a new record, can we automatically check to make sure the user is not creating a duplicate of an existing record? What if they don&rsquo;t bother to check existing records?</li>
+</ol>
+
+<h2 id="the-wireframe">The Wireframe</h2>
+
+<p><a href="https://www.figma.com/proto/NEkzIxrcKoqOAzw7RN8Mm9g8/Waystar-Task-Assessment?node-id=22%3A41&amp;scaling=min-zoom">Here is a link to the wireframe</a> (<em>same as the above link</em>). It should give a decent idea of how I would approach this product, as well as other features and products in general. Thanks!</p>
+
+    </div>
+  </section>
+  <footer>
+    
+    
+    
+    
+
+  </footer>
+</article>
   </main>
   
 

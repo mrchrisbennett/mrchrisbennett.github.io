@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.chrisbennett.io/waystar/</loc>
+    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.chrisbennett.io/covenant-eyes/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
   </url>
@@ -94,14 +99,14 @@
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/categories/branding/</loc>
-    <lastmod>2018-01-26T00:00:00+00:00</lastmod>
+    <loc>http://www.chrisbennett.io/tags/branding/</loc>
+    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/tags/branding/</loc>
-    <lastmod>2018-07-03T00:00:00+00:00</lastmod>
+    <loc>http://www.chrisbennett.io/categories/branding/</loc>
+    <lastmod>2018-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -113,7 +118,7 @@
   
   <url>
     <loc>http://www.chrisbennett.io/</loc>
-    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -130,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/categories/design/</loc>
-    <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+    <loc>http://www.chrisbennett.io/tags/design/</loc>
+    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.chrisbennett.io/tags/design/</loc>
-    <lastmod>2018-09-13T00:00:00+00:00</lastmod>
+    <loc>http://www.chrisbennett.io/categories/design/</loc>
+    <lastmod>2018-06-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -161,7 +166,7 @@
   
   <url>
     <loc>http://www.chrisbennett.io/portfolio/</loc>
-    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
